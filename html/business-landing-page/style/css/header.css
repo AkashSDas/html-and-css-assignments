@@ -1,0 +1,120 @@
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 2rem 4rem;
+  background: linear-gradient(45deg, rgb(75, 83, 95), rgb(117, 128, 139));
+  color: #fff;
+}
+
+/* NAV */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav .logo {
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav ul li:last-of-type button {
+  background-color: transparent;
+  border: 1px solid rgba(212, 212, 212, 0.5);
+  padding: 0.5rem 2rem;
+  color: white;
+}
+
+/* Hero */
+
+header .hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+  gap: 4rem;
+}
+
+header .hero .img {
+  width: 420px;
+  height: 530px;
+  background-image: url("../../assets/pexels-fauxels-3183197.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header .hero .contact {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+header .hero .contact h3 {
+  font-size: 2.9rem;
+}
+
+header .hero .contact p {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: rgb(206, 206, 206);
+}
+
+header .hero form {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+header .hero form i {
+  color: #000;
+  font-size: 1rem;
+}
+
+header .hero form input {
+  flex-grow: 1;
+  background-color: transparent;
+  font-size: 1rem;
+  font-family: var(--font-body);
+}
+
+header .hero form button {
+  padding: 1rem 2.5rem;
+  color: #fff;
+  background-color: #a5d8a5;
+  font-family: var(--font-body);
+}
+
+/* Media Query */
+@media screen and (max-width: 860px) {
+  nav ul {
+    display: none;
+  }
+
+  header {
+    padding: 2rem 1rem;
+  }
+
+  header .hero {
+    flex-direction: column;
+  }
+  header .hero .img {
+    width: 100%;
+    height: 300px;
+  }
+  header .hero .contact {
+    width: 100%;
+  }
+}

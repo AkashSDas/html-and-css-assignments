@@ -1,0 +1,15 @@
+.btn {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-filled {
+  width: 200px;
+  padding: 1.25rem 2rem;
+  background: var(--blue-gradient);
+  color: var(--white);
+  box-shadow: 0px 8px 16px rgba(51, 132, 255, 0.25);
+}

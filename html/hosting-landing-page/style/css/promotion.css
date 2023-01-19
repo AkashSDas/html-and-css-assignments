@@ -1,0 +1,52 @@
+.promotion {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.promotion .hosting-offer,
+.promotion .cost-info,
+.promotion .support {
+  padding: 0 var(--base-x-pad);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.promotion .hosting-offer > *,
+.promotion .cost-info > *,
+.promotion .support > * {
+  width: 50%;
+}
+
+.promotion article div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.promotion article div:first-of-type h3 {
+  font-size: 2.7rem;
+  line-height: 1.4;
+}
+
+/* Cost Info */
+.promotion .cost-info {
+  flex-direction: row-reverse;
+}
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+  .promotion .hosting-offer,
+  .promotion .cost-info,
+  .promotion .support {
+    flex-direction: column-reverse;
+  }
+  .promotion .hosting-offer > *,
+  .promotion .cost-info > *,
+  .promotion .support > * {
+    width: 100%;
+  }
+}

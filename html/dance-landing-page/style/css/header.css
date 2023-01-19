@@ -1,0 +1,231 @@
+/* NAV */
+
+nav {
+  padding: var(--body-pad);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: var(--nav-height);
+  z-index: 1;
+}
+
+nav .logo {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2.5rem;
+  width: 75%;
+}
+
+nav ul li {
+  color: var(--text2);
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+nav ul li:hover {
+  color: var(--text1);
+}
+
+nav ul::before {
+  content: "";
+  display: block;
+  background-color: var(--text1);
+  width: 251px;
+  height: 2px;
+}
+
+/* HERO */
+
+.hero {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+}
+
+.hero .img {
+  background-image: url("../../assets/dance.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* PROMOTION */
+
+.promotion {
+  margin-top: var(--nav-height);
+  padding: var(--body-pad);
+}
+
+.promotion .contact {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-end;
+}
+
+.promotion .contact .text {
+  display: inline-flex;
+  flex-direction: column;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 4rem;
+}
+
+.promotion .contact .text :nth-child(2) {
+  padding-left: 6rem;
+}
+
+.promotion .contact .text span {
+  width: max-content;
+}
+
+.promotion .contact .text svg {
+  height: 6rem;
+}
+
+.promotion .contact p {
+  font-size: 1.5rem;
+  color: var(--text2);
+  flex-grow: 1;
+}
+
+.promotion .contact .social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 210px;
+}
+
+/* BTN */
+
+.btn-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.btn-wrapper button {
+  background-color: var(--text1);
+  color: var(--bg);
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+}
+
+/* CONTENT */
+
+.content {
+  display: grid;
+  grid-template-columns: 180px 1fr 40px;
+  gap: 2rem;
+}
+
+.content .content-type {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.25rem;
+  color: var(--text2);
+  position: relative;
+  height: max-content;
+}
+
+.content .content-type .value {
+  display: flex;
+  align-items: center;
+}
+
+.content .content-type .value:first-of-type {
+  color: var(--text1);
+}
+
+.content .content-type .value::before {
+  content: "";
+  display: inline-block;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+  background-color: var(--text2);
+}
+
+.content .content-type .value:first-of-type::before {
+  background-color: var(--text1);
+}
+
+.content .content-type .line {
+  height: 90%;
+  width: 2px;
+  background-color: var(--text2);
+  position: absolute;
+  margin-left: 0.25rem;
+  margin-top: 0.55rem;
+  z-index: -1;
+}
+
+.content .content-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.content .content-info i {
+  font-size: 3rem;
+}
+
+.content .content-info p {
+  font-size: 1.25rem;
+}
+
+.content .content-info img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.content .down-arrow {
+  font-size: 4rem;
+  position: relative;
+}
+
+.content .down-arrow i {
+  position: absolute;
+  top: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .hero .img {
+    display: none;
+  }
+  .hero .promotion .contact {
+    flex-wrap: wrap;
+  }
+  .hero .promotion .contact .social-media {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 8;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+  .down-arrow {
+    display: none;
+  }
+}

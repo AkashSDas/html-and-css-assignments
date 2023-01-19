@@ -1,0 +1,31 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --font-head: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --bg-img-url: url("../../images/interior-design.avif");
+  --base-padding: 2rem;
+}
+
+body,
+button {
+  font-family: var(--font-body);
+}
+
+body {
+  background-image: var(--bg-img-url);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: var(--white);
+  font-size: 16px;
+}

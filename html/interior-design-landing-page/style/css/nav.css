@@ -1,0 +1,72 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--base-padding);
+}
+
+/* Logo */
+
+nav .logo {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 400ms ease-out;
+}
+
+nav .logo:hover {
+  transform: scale(1.35) rotate(30deg);
+}
+
+/* Links */
+
+nav ul {
+  list-style-type: none;
+
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--white);
+}
+
+/* Call link */
+
+nav ul li {
+  cursor: pointer;
+}
+
+nav ul li:last-of-type {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav ul li:last-of-type i {
+  font-size: 2rem;
+  transform: rotate(-45deg);
+}
+
+nav ul li:last-of-type i:hover {
+  animation: ring 300ms ease infinite;
+}
+
+@keyframes ring {
+  0% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
+nav ul li:last-of-type span {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

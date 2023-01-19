@@ -1,0 +1,36 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+
+  box-sizing: border-box;
+}
+
+:root {
+  --font-head: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --base-x-pad: 3rem;
+  --base-y-pad: 2rem;
+
+  --white: #faf6f6;
+  --black: #000;
+  --grey: #767676;
+  --light-blue: #5dc9fe;
+  --dark-blue: #3384ff;
+  --blue-gradient: linear-gradient(158deg, var(--light-blue), var(--dark-blue));
+}
+
+body,
+button {
+  font-family: var(--font-body);
+}
+
+body {
+  background-color: var(--white);
+  font-size: 16px;
+  max-width: 1440px;
+  margin-inline: auto;
+}

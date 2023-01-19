@@ -1,0 +1,65 @@
+.comments-section {
+  padding: var(--base-x-pad);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.comments-section h2 {
+  font-size: 2.5rem;
+}
+
+.comments-section .subtitle {
+  padding: 0 8rem;
+  text-align: center;
+  color: var(--grey);
+}
+
+.comments-section .comments {
+  display: grid;
+  gap: 1.5rem;
+  width: 100%;
+  padding: var(--base-x-pad);
+  grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+}
+
+.comments-section .comments .card {
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid rgb(226, 226, 226);
+  transition: all 300ms ease;
+}
+
+.comments-section .comments .card:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.comments-section .comments .card p {
+  font-size: 1rem;
+}
+
+.comments-section .comments .card .info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.comments-section .comments .card .info .profile {
+  width: 50px;
+  height: 50px;
+  background-color: var(--grey);
+  border-radius: 50%;
+}
+
+.comments-section .comments .card .info .metadata > * {
+  font-size: 1rem;
+}
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+  .comments-section {
+    padding: 0;
+  }
+}

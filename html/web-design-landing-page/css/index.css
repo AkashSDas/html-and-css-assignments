@@ -1,0 +1,170 @@
+/* ==================== BASE ==================== */
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --violet: #ad49ff;
+  --dark-violet: #4d3561;
+  --pink: #ffa2f3;
+}
+
+body {
+  font-size: 16px;
+  max-width: 1440px;
+}
+
+body,
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+/* ==================== NAVBAR ==================== */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  gap: 2rem;
+}
+
+/* Logo */
+nav img:first-child {
+  width: 90px;
+}
+
+/* Nav links */
+nav .nav-items {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+nav .nav-items .nav-item {
+  color: var(--dark-violet);
+  font-weight: 600;
+}
+
+/* Button */
+nav button {
+  background: linear-gradient(to right, #ad49ff 40%, #ffa2f3);
+  border-radius: 80px;
+  font-size: 1rem;
+  padding: 0.25rem 1rem;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 2rem;
+  }
+  nav .nav-items,
+  nav button {
+    display: none;
+  }
+}
+
+/* ==================== CONTENT ==================== */
+
+.main-div {
+  overflow: hidden;
+}
+
+.intro-section {
+  display: flex;
+  padding: 0rem 4rem;
+  position: relative;
+}
+
+/* Left section */
+.intro-section .left-section {
+  padding-top: 5rem;
+}
+.intro-section .left-section h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--dark-violet);
+}
+.intro-section .left-section h4 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  padding-right: 9rem;
+  color: #25063f;
+}
+.intro-section .left-section button {
+  background: linear-gradient(to right, #ad49ff 40%, #ffa2f3);
+  border-radius: 80px;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+/* Images */
+.intro-section .imgs-div {
+  position: relative;
+}
+.intro-section .imgs-div::before {
+  content: "";
+  width: 1100px;
+  height: 1000px;
+  background: linear-gradient(19deg, #c3a4f6 40%, #fcf0f9);
+  display: block;
+  position: absolute;
+  border-radius: 80px;
+  top: -590px;
+  left: -42px;
+  z-index: -1;
+  transform: rotate(74deg);
+}
+.intro-section .imgs-div img[alt="intro-img"] {
+  width: 606px;
+}
+.intro-section .imgs-div img[alt="vector-dot"] {
+  position: absolute;
+  top: 377px;
+  width: 15px;
+  left: -18px;
+}
+.intro-section .imgs-div img[alt="vector-img"] {
+  position: absolute;
+  left: -54px;
+  top: 380px;
+  width: 60px;
+}
+
+/* Media Query */
+@media screen and (max-width: 1024px) {
+  .intro-section {
+    flex-direction: column-reverse;
+    padding: 2rem;
+  }
+
+  .intro-section .left-section h4 {
+    padding: 0;
+  }
+
+  .intro-section .imgs-div::before {
+    width: 500px;
+    height: 500px;
+    top: -300px;
+    left: 198px;
+  }
+  .intro-section .imgs-div img[alt="intro-img"] {
+    width: 400px;
+  }
+  .intro-section .imgs-div img[alt="vector-dot"],
+  .intro-section .imgs-div img[alt="vector-img"] {
+    display: none;
+  }
+}

@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Red Rose";
+  background-color: rgb(51, 48, 32);
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+nav img[alt="logo"] {
+  width: 80px;
+}
+
+nav .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav .nav-links a {
+  color: rgb(180, 178, 178);
+  text-decoration: none;
+}
+
+nav .nav-links a:hover {
+  color: #fff;
+}
+
+nav .nav-links a:last-of-type button {
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: #806c00;
+  border: 1px solid #806c00;
+  border-radius: 6px;
+}
+
+.heading {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.heading > * {
+  width: 50%;
+}
+
+.heading h1 {
+  font-size: 5rem;
+}
+
+.heading p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: rgb(180, 178, 178);
+}
+
+.hero-img img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}

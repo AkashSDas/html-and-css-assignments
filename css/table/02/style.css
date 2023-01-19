@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Indie Flower;
+  padding: 8px;
+}
+
+hr {
+  height: 4px;
+  background-color: #000000;
+  border: none;
+}
+
+#myTable {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: max-content;
+}
+
+#myTable th,
+#myTable td {
+  border: 1px solid #000000;
+  padding: 8px;
+  background-color: rgb(0, 255, 191);
+}
+
+#myTable tr:nth-child(1),
+#myTable tr:nth-child(2),
+#myTable tr th {
+  color: rgb(255, 21, 0);
+}
+
+#myTable tr:nth-child(3) td:last-child {
+  background-color: rgb(120, 151, 214);
+}

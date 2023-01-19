@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Button Style */
+
+.container {
+  cursor: pointer;
+}
+
+.container a {
+  text-decoration: none;
+  border-radius: 4px;
+  position: relative;
+}
+
+.container a:first-child {
+  padding: 16px 32px;
+  background-color: #2998f3;
+  color: #ffffff;
+}
+
+.container a .badge {
+  position: absolute;
+  right: -12px;
+  top: -12px;
+
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #333333;
+
+  display: grid;
+  place-content: center;
+}

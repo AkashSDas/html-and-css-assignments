@@ -1,0 +1,85 @@
+.features {
+  padding: 2rem 4rem;
+}
+
+.features h2 {
+  text-align: center;
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+}
+
+.features .list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.features .list .feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.features .list .feature div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.features .list .feature h3 {
+  font-size: 2rem;
+}
+
+.features .list .feature p {
+  font-size: 1.25rem;
+}
+
+.features .list .feature button {
+  padding: 1.25rem 3rem;
+  color: #fff;
+  background-color: #a5d8a5;
+  font-family: var(--font-body);
+  width: max-content;
+}
+
+.features .list .img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 800px;
+}
+
+.features .list .feature:nth-child(1) .img {
+  background-image: url("../../assets/pexels-fauxels-3184405.jpg");
+}
+
+.features .list .feature:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.features .list .feature:nth-child(2) .img {
+  background-image: url("../../assets/pexels-fauxels-3184603.jpg");
+}
+
+.features .list .feature:nth-child(3) .img {
+  background-image: url("../../assets/pexels-linkedin-sales-navigator-2182969.jpg");
+}
+
+/* Media Query */
+@media screen and (max-width: 650px) {
+  .features {
+    padding: 2rem 1rem;
+  }
+  .features .list .feature,
+  .features .list .feature:nth-child(2) {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .features .list .img,
+  .features .list .feature:nth-child(2) .img {
+    height: 200px;
+    width: 100%;
+  }
+}

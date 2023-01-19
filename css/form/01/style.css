@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  font-family: "Poppins", sans-serif;
+
+  background-color: #000000;
+}
+
+/* Form */
+
+.form {
+  width: 300px;
+  padding: 32px 16px;
+  color: #ffffff;
+  background-color: #15172b;
+  border-radius: 12px;
+}
+
+.form .title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.form .subtitle {
+  margin-bottom: 30px;
+}
+
+.form .input-container {
+  margin-bottom: 20px;
+  position: relative;
+  height: 50px;
+}
+
+.form .input-container input {
+  width: 100%;
+  padding: 16px;
+  font-size: 17px;
+  height: 50px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  background-color: #2f3245;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.form .input-container label {
+  color: #5a5f81;
+  position: absolute;
+  top: 14px;
+  left: 16px;
+}
+
+.form button {
+  width: 100%;
+  height: 50px;
+  font-size: 17px;
+  color: #ffffff;
+  background-color: #0088de;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+}

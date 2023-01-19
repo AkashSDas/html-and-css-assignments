@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+
+  background-color: #cfdedf;
+}
+
+/* Button Style */
+
+.btn-wrapper .btn {
+  background-color: #1b4178;
+  border-radius: 30px;
+  border: none;
+  padding: 24px 40px 20px 40px;
+  font-size: 17px;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+
+  --shadow: 0px 8px 16px rgba(0, 0, 0, 0.45);
+  --inset-shadow: inset 0px -8px 16px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--shadow), var(--inset-shadow);
+}
+
+.btn-wrapper .btn span:last-child {
+  display: none;
+}

@@ -1,0 +1,66 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--base-y-pad) var(--base-x-pad);
+}
+
+/* Logo */
+nav .logo {
+  font-size: 2rem;
+
+  /* Gradient Text */
+  background: var(--blue-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Nav Links */
+nav .nav-links {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1rem;
+}
+nav .nav-links li {
+  cursor: pointer;
+}
+nav .nav-links a {
+  text-decoration: none;
+  color: var(--grey);
+}
+nav .nav-links a:hover {
+  color: var(--black);
+}
+
+/* Gradient Border */
+nav .border-gradient-wrapper {
+  background: var(--blue-gradient);
+  width: max-content;
+  padding: 0.1rem;
+  border-radius: 8px;
+}
+
+/* Button Bg */
+nav .btn-bg {
+  background-color: var(--white);
+  width: max-content;
+  border-radius: 8px;
+}
+
+/* Button */
+nav .btn {
+  /* Gradient Text */
+  background: var(--blue-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 960px) {
+  nav .nav-links {
+    display: none;
+  }
+}

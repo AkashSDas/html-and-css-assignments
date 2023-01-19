@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+* {
+  font-family: "poppins", "verdana";
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+/* Table Style */
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=654&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 64px;
+}
+
+.container > * {
+  margin-bottom: 20px;
+}
+
+.yo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 238px;
+}
+
+.yo > * {
+  margin-bottom: 16px;
+}
+
+.yo h3 {
+  text-align: center;
+  width: 100%;
+}
+
+.yo p input {
+  border-radius: 20px;
+  outline: none;
+  padding: 4px 8px;
+}
+
+.yo p select {
+  padding: 4px 8px;
+}
+
+.yo button {
+  border-radius: 12px;
+  outline: none;
+  padding: 12px 8px;
+  width: 400px;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  cursor: pointer;
+  background-color: rgb(57, 121, 95);
+  font-weight: bold;
+}

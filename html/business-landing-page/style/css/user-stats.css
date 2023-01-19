@@ -1,0 +1,103 @@
+.user-stats {
+  padding: 4rem;
+}
+
+/* VIDEO */
+
+.user-stats .video {
+  position: relative;
+}
+
+.user-stats .video .img {
+  height: 500px;
+  width: 100%;
+  background-image: url("../../assets/pexels-fauxels-3184325.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.user-stats .video .big-circle {
+  position: absolute;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.408);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.user-stats .video .small-circle {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.461);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.user-stats .video .play-btn {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #a5d8a5;
+  font-size: 1.5rem;
+  display: grid;
+  place-content: center;
+}
+
+/* HEADING */
+
+.user-stats h3 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+/* STATS */
+
+.user-stats .stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.user-stats .stats > div {
+  padding: 4rem;
+  padding-inline: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-stats .stats > div span:first-of-type {
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+.user-stats .stats > div span:last-of-type {
+  font-size: 0.9rem;
+}
+
+/* Media Query */
+@media screen and (max-width: 650px) {
+  .user-stats {
+    padding: 2rem 1rem;
+  }
+  .user-stats .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  .user-stats .stats > div {
+    padding: 1rem;
+  }
+}

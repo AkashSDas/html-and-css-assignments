@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Footer Style */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #160b5c;
+  color: #ffffff;
+
+  --padv: 32px;
+  --padh: 64px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Footer Top */
+
+footer .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padv) var(--padh);
+  border-bottom: 0.4px solid #ffffff;
+}
+
+footer .top .logo-details {
+  font-size: 30px;
+}
+
+footer .top .media-icons a {
+  margin-left: 8px;
+}
+
+footer .top .media-icons a:last-child {
+  margin-left: 0;
+}
+
+footer .top .media-icons a i {
+  width: 30px;
+  height: 30px;
+  display: inline-grid;
+  place-content: center;
+  border-radius: 50%;
+}
+
+footer .top .media-icons a .fa-facebook-f {
+  background-color: #4267b2;
+}
+
+footer .top .media-icons a .fa-twitter {
+  background-color: #1da1f2;
+}
+
+footer .top .media-icons a .fa-instagram {
+  background-color: #e1306c;
+}
+
+footer .top .media-icons a .fa-linkedin-in {
+  background-color: #0077b5;
+}
+
+footer .top .media-icons a .fa-youtube {
+  background-color: #ff0000;
+}
+
+/* Footer Link Boxes */
+
+footer .link-boxes {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: var(--padv) var(--padh) calc(var(--padv) * 2) var(--padh);
+}
+
+footer .link-boxes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .link-boxes ul > * {
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+footer .link-boxes ul > *:last-child {
+  margin-bottom: 0;
+}
+
+footer .link-boxes ul .link_name {
+  font-weight: 600 !important;
+  font-size: 17px !important;
+}
+
+footer .link-boxes ul .link_name::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+footer .link-boxes ul li a {
+  color: #d0cedf;
+}
+
+/* Input */
+
+footer .link-boxes .input-box input[type="text"] {
+  width: 100%;
+  border: 2px solid #d0cedf;
+  padding: 8px 12px;
+  background-color: #160b5c;
+  outline: none;
+  border-radius: 6px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+footer .link-boxes .input-box input[type="text"]::placeholder {
+  color: #d0cedf;
+}
+
+footer .link-boxes .input-box input[type="button"] {
+  width: 100%;
+  padding: 8px 12px;
+  border: none;
+  background-color: #d0cedf;
+  outline: none;
+  border-radius: 6px;
+  color: #160b5c;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+/* Footer Bottom Details */
+
+footer .bottom-details {
+  padding: var(--padv) var(--padh);
+  background-color: #100843;
+}
+
+footer .bottom-details .bottom_text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 15px;
+  color: #d0cedf;
+}
+
+footer .bottom-details .bottom_text .copyright_text a::after {
+  content: "";
+  padding: 8px;
+}
+
+footer .bottom-details .bottom_text .policy_terms a {
+  margin-left: 8px;
+}

@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Footer Style */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer a {
+  text-decoration: none;
+  color: unset;
+}
+
+/* Footer Heading */
+.footer .heading {
+  padding: 16px 80px;
+}
+
+/* Footer Content */
+
+.footer .content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding: 16px 64px;
+}
+
+.footer .content div > * {
+  margin-bottom: 16px;
+}
+
+.footer .content div > *:last-child {
+  margin-bottom: 0;
+}
+
+/* End footer */
+
+footer {
+  padding: 32px 64px;
+  position: relative;
+  display: grid;
+  place-content: center;
+}
+
+footer hr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}

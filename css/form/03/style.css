@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ======================== STYLING ======================== */
+
+:root {
+  --base: 8;
+
+  --primary: #ffffff;
+  --accent: rgb(99, 91, 255);
+  --text1: rgba(60, 66, 87, 0.2);
+}
+
+label {
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+/* ======================== LOGIN ROOT ======================== */
+
+.login-root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ======================== HELPER CLASSES ======================== */
+
+.flex-flex {
+  display: flex;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.box-background--white {
+  background-color: #ffffff;
+}
+
+.padding-top--64 {
+  padding-top: 64px;
+}
+
+.padding-bottom--15 {
+  padding-bottom: 15px;
+}
+
+.padding-bottom--24 {
+  padding-bottom: 24px;
+}
+
+.padding-top--24 {
+  padding-top: 24px;
+}
+
+.center-center {
+  justify-content: center;
+}
+
+.padding-horizontal--48 {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+/* ======================== FORM CARD ======================== */
+
+/* FORM OUTER */
+
+.formbg-outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+}
+
+.formbg-outer > * {
+  margin-bottom: calc(var(--base) * 2px);
+}
+
+.formbg-outer > *:last-child {
+  margin-bottom: 0;
+}
+
+/* FORM BG CARD */
+
+.formbg {
+  padding: calc(var(--base) * 6px) var(--base);
+  border-radius: 6px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.formbg .formbg-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+/* FORM BG CARD HEADING */
+.formbg span:first-of-type {
+  font-size: 23px;
+  font-weight: 500;
+}
+
+/* FORM BG CARD INPUTS - STRIPE LOGIN */
+
+#stripe-login .field {
+  display: flex;
+  flex-direction: column;
+}
+
+#stripe-login .field input[type="email"],
+#stripe-login .field input[type="password"] {
+  width: 100%;
+  border: 1px solid var(--text1);
+  border-radius: 4px;
+  height: 44px;
+}
+
+.grid--50-50 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.reset-pass {
+  text-align: right;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+#stripe-login .field-checkbox label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#stripe-login .field-checkbox input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+}
+
+#stripe-login .field input[type="submit"] {
+  height: 44px;
+  background-color: var(--accent);
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+}
+
+#stripe-login .field a {
+  font-weight: 500;
+  text-align: center;
+}
+
+/* ======================== FORM FOOTER LINK ======================== */
+
+.formbg-outer .footer-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formbg-outer .footer-link .listing span {
+  margin-right: 32px;
+}
+
+.formbg-outer .footer-link .listing span a {
+  color: grey;
+  font-weight: 500;
+}
+
+/* ======================== LOGIN ROOT ITEM ======================== */
+
+.login-root .box-root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ======================== BACKGROUND ======================== */
+
+.loginbackground-gridContainer {
+  display: grid;
+}
+
+.box-divider--light-all-2 {
+}
+
+.animationLeftRight {
+  transform: translate(-100px, 0);
+}
+
+.box-background--blue800 {
+  background-color: blue;
+}
+
+.box-background--grey100 {
+  background-color: grey;
+}
+
+.box-background--cyan200 {
+  background-color: cyan;
+}

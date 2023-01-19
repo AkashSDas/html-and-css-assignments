@@ -1,0 +1,32 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+
+  box-sizing: border-box;
+}
+
+:root {
+  --font-head: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --body-pad: 2rem;
+
+  --bg: #fefcfc;
+  --text1: rgb(37, 37, 37);
+  --text2: rgb(182, 182, 182);
+
+  --nav-height: 100px;
+}
+
+body,
+button {
+  font-family: var(--font-body);
+}
+
+body {
+  font-size: 16px;
+  background-color: var(--bg);
+}
